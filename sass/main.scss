@@ -1,0 +1,24 @@
+@charset "UTF-8";
+//  Плейсхолдер(Утилиты)
+@import "../sass/utils/placeholders";
+// Переменные
+@import "../sass/utils/variables";
+// Визуальное скрытие
+@import "../sass/utils/headline-hidden";
+// Нормалайз
+@import "../sass/utils/normalize";
+// Контейнер
+@import "./components/container";
+// Хедер
+@import "./components/header";
+// Модальное окно
+@import "./components/studio/modal";
+// Секции
+@import "./components/studio/_bonnet";
+@import "./components/studio/advantage";
+@import "./components/studio/skills";
+@import "./components/studio/team";
+@import "./components/studio/clients";
+
+// Футер
+@import "./components/footer";
