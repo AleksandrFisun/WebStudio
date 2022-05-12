@@ -1,7 +1,9 @@
 
 .skills__list {
-    @extend %display_f;
-    justify-content: space-between;
+    @media screen and (min-width: 480px) {
+            display: flex;
+            justify-content: space-between;
+        }
 }
 
 .skills__item {

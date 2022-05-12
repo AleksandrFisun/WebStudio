@@ -36,12 +36,16 @@
 }
 
 .header__section {
-    display: flex;
-    align-items: center;
+@media screen and (min-width: 480px){
+        display: flex;
+            align-items: center;
+    }
 }
 
 .header-nav__list {
-    display: flex;
+    @media screen and (min-width: 480px) {
+            display: flex;
+        }
 }
 
 .header-nav__link {
@@ -91,21 +95,27 @@
 /* Стилизация ссылок связи */
 
 .connection {
-    display: flex;
-    margin-left: auto;
+    @media screen and (min-width: 480px) {
+            display: flex;
+                margin-left: auto;
+        }
+   
 }
 
 .connection-list {
-    display: flex;
+    @media screen and (min-width: 480px) {
+            display: flex;
+        }
 }
 
 .connection-list__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @media screen and (min-width: 480px) {
+            display: flex;
+                justify-content: center;
+                align-items: center;
+        }
     padding-top: 20px;
     padding-bottom: 20px;
-    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;

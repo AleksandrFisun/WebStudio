@@ -1,21 +1,43 @@
 /* Секция наши клиенты */
 .clients {
-    @extend %display_f;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 480px) {
+    }
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    }
 }
 
 .clients__list{
-    @extend %display_f;
-    align-items: center;
-    justify-content: center;
-    width: 170px;
-    height: 92px;
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (min-width: 480px) {
+        }
+    @media screen and (min-width: 780px) {
+            width: 226px;
+            height: 92px;
+        }
+    @media screen and (min-width: 1200px) {
+            width: 170px;
+            height: 92px;
+        }        
 }
 
 .clients__list+.clients__list {
-    margin-left: 30px;
+    @media screen and (min-width: 1200px){
+margin-left: 30px;
+    }
 }
 
 .clients__link {
+
+    width: 210px;
+    height: 92px;
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;

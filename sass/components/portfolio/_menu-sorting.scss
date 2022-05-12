@@ -16,8 +16,10 @@
 
 /* Меню сортировки поиска работ компании */
 .menu__sorting {
-    @extend %display_f;
-    justify-content: center;
+    @media screen and (min-width: 480px) {
+            display: flex;
+            justify-content: center;
+        }
     margin-bottom: 50px;
 }
 

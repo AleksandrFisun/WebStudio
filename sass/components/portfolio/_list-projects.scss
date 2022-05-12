@@ -1,7 +1,9 @@
 /* Проекты */
 .projects-list {
-    @extend %display_f;
-    flex-wrap: wrap;
+    @media screen and (min-width: 480px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
 }
 
 .projects-list__img {

@@ -7,7 +7,9 @@
 }
 
 .advantage__list {
-    @extend %display_f;
+    @media screen and (min-width: 480px) {
+            display: flex;
+        }
 }
 
 .advantage__list>li {
@@ -20,7 +22,11 @@
 
 /* Иконки наши достоинства */
 .dignity {
-    @extend %display_dja;
+    @media screen and (min-width: 480px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
