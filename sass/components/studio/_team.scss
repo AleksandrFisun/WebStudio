@@ -1,136 +1,121 @@
 /* Секция наша команда */
 /* Заглавие 3 уровня в ячейках каждого члена команды */
 .section-team {
+  background-color: #f5f4fa;
+  padding-top: 60px;
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
-    background-color: #f5f4fa;
+  }
 }
-
 .team {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    @media screen and (min-width: 480px){
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: center;
-   }
-   @media screen and (min-width: 1200px) {
-       display: flex;
-       justify-content: space-between;
-   }
-    
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
 }
 
 /* Коробка для заголовка и описания тимы */
 .team__item {
-            width: 270px;
-    background-color: $color-default;
-    text-align: center;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-margin: 0 0 30px 0;
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-            width: 450px;
-            height: 622px;
-        }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-            width: 354px;
-            height: 536px;
-            margin: 0 30px 30px 0;
-        }
-    @media screen and (min-width: 1200px) {
-            width: 270px;
-            margin: 0;
-        }
+  width: 270px;
+  background-color: $color-default;
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin: 0 0 30px 0;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 450px;
+    height: 622px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+    height: 536px;
+    margin: 0 30px 30px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    margin: 0;
+  }
 }
-.team_image{
-width: 270px;
+.team_image {
+  width: 270px;
+  height: 260px;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 450px;
+    height: 460px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+    height: 374px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
     height: 260px;
-    @media screen and (min-width: 480px) and (max-width: 767px){
-            width: 450px;
-            height: 460px;
-        }
-    
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-            width: 354px;
-            height: 374px;
-        }
-    
-    @media screen and (min-width: 1200px) {
-            width: 270px;
-            height: 260px;
-        }
+  }
 }
-
 .team__box {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 .team__title {
-    font-weight: 500;
-    font-size: 1rem;
-    padding-bottom: 10px;
-    line-height: 1.18rem;
-    letter-spacing: 0.03em;
-    color: $color-text;
+  font-weight: 500;
+  font-size: 1rem;
+  padding-bottom: 10px;
+  line-height: 1.18rem;
+  letter-spacing: 0.03em;
+  color: $color-text;
 }
 
 /* Описание рода деятельности члена команды */
 .team__text {
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.18rem;
-    letter-spacing: 0.03em;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.18rem;
+  letter-spacing: 0.03em;
 }
 
 /* Список социальных сетей */
 .team-list {
- display: flex;
- align-items: center;
- justify-content: center;
-    color: $color-default;
-    padding: 1rem 32px 30px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $color-default;
+  padding: 1rem 32px 30px 32px;
 }
 
 .team-list__item-icon {
- display: flex;
- align-items: center;
- justify-content: center;
-        
-    
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .team-list__link-icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    color: #AFB1B8;
-    transition-property: background-color, border-radius;
-    transition-duration: 250ms;
-    &:hover,
-    &:focus {
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-property: background-color;
-        color: $color-default;
-        background-color: $color-additional;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+  transition-property: background-color, border-radius;
+  transition-duration: 250ms;
+  &:hover,
+  &:focus {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color;
+    color: $color-default;
+    background-color: $color-additional;
+  }
 }
 
-
-.team-list__item-icon+.team-list__item-icon {
-    margin-left: 10px;
+.team-list__item-icon + .team-list__item-icon {
+  margin-left: 10px;
 }
 
 .team-list__our-icon {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
