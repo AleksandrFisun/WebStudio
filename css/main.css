@@ -417,8 +417,8 @@ body {
 /* модальное окно */
 .modal {
   position: relative;
-  min-height: 581px;
-  min-width: 528px;
+  max-height: 581px;
+  max-width: 528px;
   background-color: white;
 }
 
@@ -1459,7 +1459,7 @@ body {
 }
 
 .footer-form__input {
-  width: 450px;
+  width: 358px;
   height: 50px;
   padding: 1rem 1rem;
   background: #2f303a;
@@ -1472,6 +1472,13 @@ body {
   border-radius: 4px;
   color: #ffffff;
   margin: 0 0 20px 0;
+}
+
+@media screen and (min-width: 480px) {
+  .footer-form__input {
+    width: 450px;
+    margin: 0 0 0 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {

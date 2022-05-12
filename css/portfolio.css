@@ -855,7 +855,7 @@ body {
 }
 
 .footer-form__input {
-  width: 450px;
+  width: 358px;
   height: 50px;
   padding: 1rem 1rem;
   background: #2f303a;
@@ -868,6 +868,13 @@ body {
   border-radius: 4px;
   color: #ffffff;
   margin: 0 0 20px 0;
+}
+
+@media screen and (min-width: 480px) {
+  .footer-form__input {
+    width: 450px;
+    margin: 0 0 0 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
