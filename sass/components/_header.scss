@@ -150,18 +150,22 @@
   font-family: $font-roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 20px;
+  line-height: 20px;
   letter-spacing: 0.02em;
   color: $color-text-secondary;
 }
 .connection-list__phone-menu {
+  font-size: 24px;
+  line-height: 28px;
   padding: 20px 20px;
   font-family: $font-roboto;
-  font-size: 34px;
-  line-height: 40px;
   letter-spacing: 0.02em;
   color: $color-additional;
+  @media screen and (min-width: 480px) {
+    font-size: 34px;
+    line-height: 40px;
+  }
 }
 .connection-list {
   @media screen and (max-width: 768px) {
@@ -256,9 +260,11 @@
   flex-wrap: wrap;
 }
 .header-menu__social-item {
+  margin-bottom: 10px;
   padding: 0 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   &:last-child {
+    margin-bottom: 0;
     border-right: none;
   }
 }
