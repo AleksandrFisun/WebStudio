@@ -11,13 +11,23 @@
 /* HEADER */
 /* Logotype */
 .header {
-  border-bottom: 1px solid #ececec;
   position: relative;
+  border-bottom: 1px solid #ececec;
+}
+
+.header__section {
+  margin: 15px 88px 15px 0;
+  justify-content: space-between;
+  display: flex;
+  @media screen and (min-width: 768px) {
+    margin: 0 0 0 0;
+    align-items: center;
+  }
 }
 
 .header-logo,
 .header-logo:focus {
-  margin-right: 88px;
+  margin: 0 88px 0 0;
   font-family: $font-raleway;
   font-weight: 700;
   font-size: 1.5rem;
@@ -25,7 +35,7 @@
   color: #000000;
   text-decoration: none;
   @media screen and (min-width: 1200px) {
-    margin-right: 93px;
+    margin: 0 93px 0 0;
     font-size: 1.625rem;
     line-height: 31px;
   }
@@ -34,25 +44,27 @@
 .header-logo__blue {
   color: $color-additional;
 }
-// Мобильная навигация
-.header-nav__container-mobile {
-  position: absolute;
-  top: 100%;
-  left: 0;
+.header__menu-container {
+  display: flex;
+  align-items: center;
   width: 100%;
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    background-color: aqua;
+    &.is-open {
+      display: block;
+    }
+  }
 }
-
 /* Стилизация навигации хедер */
 .header-nav {
   margin-bottom: 30px;
   margin-top: 30px;
-}
-
-.header__section {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-  }
 }
 
 .header-nav__list {
@@ -109,7 +121,7 @@
 
 .connection {
   margin-left: auto;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
   }
 }

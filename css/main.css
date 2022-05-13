@@ -196,20 +196,6 @@ body {
   text-decoration: none;
 }
 
-/* Контейнер */
-.container {
-  max-width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .headline {
   font-weight: 700;
   font-size: 2.25rem;
@@ -223,13 +209,32 @@ body {
 /* HEADER */
 /* Logotype */
 .header {
-  border-bottom: 1px solid #ececec;
   position: relative;
+  border-bottom: 1px solid #ececec;
+}
+
+.header__section {
+  margin: 15px 88px 15px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .header__section {
+    margin: 0 0 0 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .header-logo,
 .header-logo:focus {
-  margin-right: 88px;
+  margin: 0 88px 0 0;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
@@ -241,7 +246,7 @@ body {
 @media screen and (min-width: 1200px) {
   .header-logo,
   .header-logo:focus {
-    margin-right: 93px;
+    margin: 0 93px 0 0;
     font-size: 1.625rem;
     line-height: 31px;
   }
@@ -251,28 +256,35 @@ body {
   color: #2196f3;
 }
 
-.header-nav__container-mobile {
-  position: absolute;
-  top: 100%;
-  left: 0;
+.header__menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .header__menu-container {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    background-color: aqua;
+  }
+  .header__menu-container.is-open {
+    display: block;
+  }
 }
 
 /* Стилизация навигации хедер */
 .header-nav {
   margin-bottom: 30px;
   margin-top: 30px;
-}
-
-@media screen and (min-width: 768px) {
-  .header__section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -335,7 +347,7 @@ body {
   margin-left: auto;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .connection {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -418,6 +430,34 @@ body {
   .connection-list__item:last-child {
     margin-right: 0;
   }
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
 }
 
 /* Бек дроп и кнопка */
@@ -1542,5 +1582,19 @@ body {
   height: 24px;
   margin-left: 10px;
   fill: currentColor;
+}
+
+/* Контейнер */
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 /*# sourceMappingURL=main.css.map */

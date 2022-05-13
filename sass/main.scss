@@ -7,10 +7,11 @@
 @import "../sass/utils/headline-hidden";
 // Нормалайз
 @import "../sass/utils/normalize";
-// Контейнер
-@import "./components/container";
+
 // Хедер
 @import "./components/header";
+// Бургер меню
+@import "./components/studio/mobile-menu";
 // Модальное окно
 @import "./components/studio/modal";
 // Секции
@@ -22,3 +23,5 @@
 
 // Футер
 @import "./components/footer";
+// Контейнер
+@import "./components/container";
