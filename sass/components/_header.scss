@@ -16,13 +16,18 @@
 
 .header-logo,
 .header-logo:focus {
-  margin-right: 93px;
+  margin-right: 88px;
   font-family: $font-raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 1.5rem;
+  line-height: 28px;
   color: #000000;
   text-decoration: none;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    font-size: 1.625rem;
+    line-height: 31px;
+  }
 }
 
 .header-logo__blue {
@@ -36,14 +41,14 @@
 }
 
 .header__section {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
   }
 }
 
 .header-nav__list {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     display: flex;
   }
 }
@@ -95,20 +100,20 @@
 /* Стилизация ссылок связи */
 
 .connection {
-  @media screen and (min-width: 480px) {
+  margin-left: auto;
+  @media screen and (min-width: 1200px) {
     display: flex;
-    margin-left: auto;
   }
 }
 
 .connection-list {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
 
 .connection-list__link {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,9 +152,15 @@
 }
 
 .connection-list__item {
-  margin-right: 50px;
-}
-
-.connection-list__item:last-child {
-  margin-right: 0;
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+    margin-bottom: 0;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
