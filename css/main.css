@@ -366,15 +366,23 @@ body {
 }
 
 /* Стилизация ссылок связи */
-.connection {
-  margin-left: auto;
-}
-
 @media screen and (min-width: 768px) {
   .connection {
+    margin-left: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .connection-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
   }
 }
 
@@ -389,10 +397,6 @@ body {
 .connection-list__link {
   padding-top: 20px;
   padding-bottom: 20px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   text-decoration: none;
   color: #757575;
   -webkit-transition-property: color;
@@ -412,6 +416,15 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .connection-list__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
   }
 }
 

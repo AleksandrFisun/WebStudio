@@ -137,34 +137,42 @@
 /* Стилизация ссылок связи */
 
 .connection {
-  margin-left: auto;
   @media screen and (min-width: 768px) {
+    margin-left: auto;
     display: flex;
   }
 }
 
 .connection-list {
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+    align-content: flex-end;
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
 
 .connection-list__link {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: $color-text-secondary;
+  transition-property: color;
+  transition-duration: 250ms;
   @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: $color-text-secondary;
-  transition-property: color;
-  transition-duration: 250ms;
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+}
+.connection-list__phone-menu {
 }
 
 .connection-list__link:hover,
