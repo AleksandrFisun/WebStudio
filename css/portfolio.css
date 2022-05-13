@@ -380,17 +380,45 @@ body {
 }
 
 /* Стилизация ссылок связи */
+.connection {
+  margin-top: 302px;
+}
+
 @media screen and (min-width: 768px) {
   .connection {
     margin-left: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 0;
   }
+}
+
+.connection-list__mail-menu {
+  padding: 20px 20px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.connection-list__phone-menu {
+  padding: 20px 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
 
 @media screen and (max-width: 768px) {
   .connection-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -409,14 +437,24 @@ body {
 }
 
 .connection-list__link {
-  padding-top: 20px;
-  padding-bottom: 20px;
   text-decoration: none;
-  color: #757575;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .connection-list__link {
+    text-decoration: none;
+    color: #757575;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -433,15 +471,6 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .connection-list__link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-  }
-}
-
 .connection-list__link:hover,
 .connection-list__link:focus {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -451,25 +480,49 @@ body {
 
 /* Декоративные картинки телефона и мэил */
 .connection-list__icon-mail {
+  display: none;
   fill: currentColor;
   margin-right: 10px;
   width: 16px;
   height: 12px;
 }
 
+@media screen and (min-width: 768) {
+  .connection-list__icon-mail {
+    display: block;
+  }
+}
+
 .connection-list__icon-phone {
+  display: none;
   fill: currentColor;
   margin-right: 10px;
   width: 10px;
   height: 16px;
 }
 
-.connection-list__item {
-  margin-bottom: 10px;
+@media screen and (min-width: 768) {
+  .connection-list__icon-phone {
+    display: block;
+  }
 }
 
-.connection-list__item:last-child {
-  margin-bottom: 0;
+@media screen and (min-width: 100px) {
+  .connection-list__item {
+    margin-bottom: 32px;
+  }
+  .connection-list__item:first-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .connection-list__item {
+    margin-bottom: 10px;
+  }
+  .connection-list__item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -480,6 +533,41 @@ body {
   .connection-list__item:last-child {
     margin-right: 0;
   }
+}
+
+.header-menu__social {
+  margin-top: 64px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-menu__social {
+    display: none;
+  }
+}
+
+.header-menu__social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-menu__social-item {
+  padding: 0 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.header-menu__social-item:last-child {
+  border-right: none;
+}
+
+.header-menu__social-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  text-decoration: none;
 }
 
 /* Тело страницы студия */
