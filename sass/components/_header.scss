@@ -12,6 +12,7 @@
 /* Logotype */
 .header {
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
 
 .header-logo,
@@ -32,6 +33,13 @@
 
 .header-logo__blue {
   color: $color-additional;
+}
+// Мобильная навигация
+.header-nav__container-mobile {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
 }
 
 /* Стилизация навигации хедер */
