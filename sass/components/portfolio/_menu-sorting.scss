@@ -16,15 +16,24 @@
 
 /* Меню сортировки поиска работ компании */
 .menu__sorting {
-  @media screen and (min-width: 480px) {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
     justify-content: center;
   }
-  margin-bottom: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .menu__list {
   margin-right: 8px;
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 0;
+  }
 }
 
 .menu__list:last-child {
