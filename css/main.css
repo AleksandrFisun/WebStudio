@@ -270,11 +270,11 @@ body {
   .header__menu-container {
     position: absolute;
     display: none;
-    top: 100%;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 700px;
-    background-color: aqua;
+    height: 796px;
+    background: #ffffff;
   }
   .header__menu-container.is-open {
     display: block;
@@ -439,6 +439,7 @@ body {
   margin: 0;
   padding: 0;
   border: none;
+  z-index: 10;
   background-color: transparent;
 }
 
@@ -446,6 +447,25 @@ body {
   .menu-button {
     display: none;
   }
+}
+
+.menu-button__icon {
+  background-color: aqua;
+  color: azure;
+  width: 20px;
+  height: 20px;
+}
+
+.menu-button__icon .icon-cross {
+  color: aqua;
+  width: 20px;
+  height: 20px;
+}
+
+.menu-button__icon .icon-menu {
+  color: aqua;
+  width: 20px;
+  height: 20px;
 }
 
 .menu-button .icon-cross {

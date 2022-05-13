@@ -3,10 +3,27 @@
   margin: 0;
   padding: 0;
   border: none;
+  z-index: 10;
   background-color: transparent;
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+.menu-button__icon {
+  background-color: aqua;
+  color: azure;
+  width: 20px;
+  height: 20px;
+}
+.menu-button__icon .icon-cross {
+  color: aqua;
+  width: 20px;
+  height: 20px;
+}
+.menu-button__icon .icon-menu {
+  color: aqua;
+  width: 20px;
+  height: 20px;
 }
 .menu-button .icon-cross {
   display: none;
