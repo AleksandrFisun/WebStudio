@@ -7,15 +7,24 @@
 @import "../sass/utils/headline-hidden";
 // Нормалайз
 @import "../sass/utils/normalize";
-// Контейнер
-@import "./components/container";
 // Хедер
 @import "./components/header";
+// Бургер меню
+@import "./components/studio/mobile-menu";
+// Модальное окно
+@import "./components/studio/modal";
 // Секции студии
 @import "./components/studio/_bonnet";
+@import "./components/studio/advantage";
+@import "./components/studio/skills";
+@import "./components/studio/team";
+@import "./components/studio/clients";
+
 //  Секции портфолио
 @import "./components/portfolio/_menu-sorting";
 @import "./components/portfolio/list-projects";
 @import "./components/portfolio/text-projects";
 // Футер
 @import "./components/footer";
+// Контейнер
+@import "./components/container";

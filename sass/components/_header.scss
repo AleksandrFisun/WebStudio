@@ -48,6 +48,7 @@
   display: flex;
   align-items: center;
   width: 100%;
+  z-index: 20;
   @media screen and (max-width: 768px) {
     position: absolute;
     display: none;
@@ -252,6 +253,7 @@
 }
 .header-menu__social-list {
   display: flex;
+  flex-wrap: wrap;
 }
 .header-menu__social-item {
   padding: 0 10px;
