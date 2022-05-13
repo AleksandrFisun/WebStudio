@@ -4,26 +4,29 @@
   padding: 0;
   border: none;
   z-index: 10;
+  color: $color-additional;
   background-color: transparent;
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
 .menu-button__icon {
-  background-color: aqua;
-  color: azure;
   width: 20px;
   height: 20px;
 }
-.menu-button__icon .icon-cross {
-  color: aqua;
-  width: 20px;
-  height: 20px;
+.icon-menu {
+  padding: 20px;
 }
-.menu-button__icon .icon-menu {
-  color: aqua;
-  width: 20px;
-  height: 20px;
+.menu-button__icon:focus .icon-menu,
+.menu-button__icon:hover .icon-menu {
+  fill: currentColor;
+}
+.icon-cross {
+  padding: 20px;
+}
+.menu-button__icon:focus .icon-cross,
+.menu-button__icon:hover .icon-cross {
+  fill: currentColor;
 }
 .menu-button .icon-cross {
   display: none;
