@@ -38,6 +38,12 @@ body {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
@@ -291,6 +297,10 @@ body {
   }
 }
 
+.header-nav__list {
+  margin-bottom: -32px;
+}
+
 @media screen and (min-width: 768px) {
   .header-nav__list {
     display: -webkit-box;
@@ -301,10 +311,10 @@ body {
 
 .header-nav__link {
   position: relative;
-  padding: 15px 30px 15px 30px;
   font-weight: 500;
-  font-size: 40px;
-  line-height: 47px;
+  padding: 10px 30px 10px 30px;
+  font-size: 36px;
+  line-height: 42px;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #212121;
@@ -312,6 +322,14 @@ body {
   transition-property: color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
+}
+
+@media screen and (min-width: 480px) {
+  .header-nav__link {
+    padding: 15px 30px 15px 30px;
+    font-size: 40px;
+    line-height: 47px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -337,7 +355,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .header-nav__item {
-    margin-bottom: 0;
     margin-right: 50px;
   }
 }
@@ -367,10 +384,6 @@ body {
 }
 
 /* Стилизация ссылок связи */
-.connection {
-  margin-top: 302px;
-}
-
 @media screen and (min-width: 768px) {
   .connection {
     margin-left: auto;
@@ -386,15 +399,21 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 20px;
   letter-spacing: 0.02em;
   color: #757575;
 }
 
+@media screen and (min-width: 480px) {
+  .connection-list__mail-menu {
+    padding: 0 0;
+  }
+}
+
 .connection-list__phone-menu {
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 22px;
+  line-height: 12px;
   padding: 20px 20px;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.02em;
@@ -403,22 +422,24 @@ body {
 
 @media screen and (min-width: 480px) {
   .connection-list__phone-menu {
+    padding: 0 0;
     font-size: 34px;
     line-height: 40px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .connection-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: 300px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    -ms-flex-line-pack: end;
-        align-content: flex-end;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
   }
 }
 
@@ -632,7 +653,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  z-index: 10;
+  z-index: 50;
   position: fixed;
   top: 0;
   left: 0;
@@ -817,20 +838,34 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
-  color: #757575;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 768px) {
+  .modal__rights {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
 }
 
 .modal__rights-link {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 0.9rem;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .modal__rights-link {
+    font-size: 0.875rem;
+    line-height: 0.9rem;
+  }
 }
 
 .modal__button {
@@ -955,8 +990,8 @@ body {
 
 /* Тело страницы студия */
 .bonnet {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../images/bonnet/people-phone.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/bonnet/people-phone.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bonnet/people-mobile.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bonnet/people-mobile.jpg);
   background-color: rgba(47, 48, 58, 0.4);
   background-position: center;
   background-size: cover;
@@ -965,15 +1000,15 @@ body {
 
 @media screen and (min-width: 768px) {
   .bonnet {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../images/bonnet/people-tablet.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/bonnet/people-tablet.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bonnet/people-tablet.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bonnet/people-tablet.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .bonnet {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../images/bonnet/people-desktop.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/bonnet/people-desktop.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bonnet/people-desktop.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bonnet/people-desktop.jpg);
   }
 }
 
@@ -1660,10 +1695,17 @@ body {
 /* Заголовок проекта */
 .projects-list__title {
   padding-bottom: 0.25rem;
-  font-size: 1.1rem;
-  line-height: 2;
+  font-size: 18px;
+  line-height: 36px;
   letter-spacing: 0.06em;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .projects-list__title {
+    font-size: 1.1rem;
+    line-height: 2;
+  }
 }
 
 /* Описание проектов */

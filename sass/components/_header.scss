@@ -70,8 +70,8 @@
     margin-top: 30px;
   }
 }
-
 .header-nav__list {
+  margin-bottom: -32px;
   @media screen and (min-width: 768px) {
     display: flex;
   }
@@ -79,15 +79,20 @@
 
 .header-nav__link {
   position: relative;
-  padding: 15px 30px 15px 30px;
   font-weight: 500;
-  font-size: 40px;
-  line-height: 47px;
+  padding: 10px 30px 10px 30px;
+  font-size: 36px;
+  line-height: 42px;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: $color-text;
   transition-property: color;
   transition-duration: 250ms;
+  @media screen and (min-width: 480px) {
+    padding: 15px 30px 15px 30px;
+    font-size: 40px;
+    line-height: 47px;
+  }
   @media screen and (min-width: 768px) {
     font-weight: 500;
     font-size: 14px;
@@ -106,7 +111,6 @@
 .header-nav__item {
   margin-bottom: 32px;
   @media screen and (min-width: 768px) {
-    margin-bottom: 0;
     margin-right: 50px;
   }
 }
@@ -138,7 +142,6 @@
 /* Стилизация ссылок связи */
 
 .connection {
-  margin-top: 302px;
   @media screen and (min-width: 768px) {
     margin-left: auto;
     display: flex;
@@ -150,28 +153,33 @@
   font-family: $font-roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 20px;
   letter-spacing: 0.02em;
   color: $color-text-secondary;
+  @media screen and (min-width: 480px) {
+    padding: 0 0;
+  }
 }
 .connection-list__phone-menu {
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 22px;
+  line-height: 12px;
   padding: 20px 20px;
   font-family: $font-roboto;
   letter-spacing: 0.02em;
   color: $color-additional;
   @media screen and (min-width: 480px) {
+    padding: 0 0;
     font-size: 34px;
     line-height: 40px;
   }
 }
 .connection-list {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: flex;
+    height: 300px;
     flex-direction: column-reverse;
-    align-content: flex-end;
+    align-content: space-around;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -184,6 +192,7 @@
   transition-duration: 250ms;
   padding-top: 20px;
   padding-bottom: 20px;
+
   @media screen and (min-width: 768px) {
     text-decoration: none;
     color: $color-text-secondary;

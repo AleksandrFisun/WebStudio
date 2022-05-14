@@ -45,10 +45,14 @@
 /* Заголовок проекта */
 .projects-list__title {
   padding-bottom: 0.25rem;
-  font-size: 1.1rem;
-  line-height: 2;
+  font-size: 18px;
+  line-height: 36px;
   letter-spacing: 0.06em;
   color: $color-text;
+  @media screen and (min-width: 1200px) {
+    font-size: 1.1rem;
+    line-height: 2;
+  }
 }
 
 /* Описание проектов */
