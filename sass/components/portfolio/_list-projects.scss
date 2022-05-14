@@ -2,8 +2,7 @@
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+  margin: -15px;
 }
 
 .projects-list__img {
@@ -11,9 +10,7 @@
 }
 
 .projects-list__item {
-  width: 450px;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin: 15px;
   transition-duration: 250ms;
   &:hover,
   &:focus {

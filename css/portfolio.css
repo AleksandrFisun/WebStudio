@@ -1609,8 +1609,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+  margin: -15px;
 }
 
 .projects-list__img {
@@ -1618,9 +1617,7 @@ body {
 }
 
 .projects-list__item {
-  width: 450px;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin: 15px;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
 }
