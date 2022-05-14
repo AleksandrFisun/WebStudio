@@ -16,13 +16,17 @@
 }
 .icon-menu {
   padding: 20px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-cross {
+  padding: 20px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-button__icon:focus .icon-menu,
 .menu-button__icon:hover .icon-menu {
   fill: currentColor;
-}
-.icon-cross {
-  padding: 20px;
 }
 .menu-button__icon:focus .icon-cross,
 .menu-button__icon:hover .icon-cross {
