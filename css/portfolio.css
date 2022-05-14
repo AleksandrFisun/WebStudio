@@ -1698,8 +1698,15 @@ body {
   color: #212121;
 }
 
+@media screen and (min-width: 768px) {
+  .projects-list__title {
+    height: 72px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .projects-list__title {
+    max-height: 36px;
     font-size: 1.1rem;
     line-height: 2;
   }
