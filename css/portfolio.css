@@ -1721,7 +1721,7 @@ body {
 @media screen and (min-width: 372px) {
   .projects-list__item:hover .projects-list__description {
     line-height: 1.6rem;
-    padding: 3rem 1.5rem;
+    padding: 2.2rem 1.5rem;
   }
 }
 
