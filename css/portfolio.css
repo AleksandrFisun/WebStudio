@@ -1684,12 +1684,12 @@ body {
           transform: translatey(100%);
   -webkit-transition-duration: 450ms;
           transition-duration: 450ms;
-  padding: 2rem 1.5rem;
+  padding: 0.7rem 0.7rem;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.1rem;
-  line-height: 1.75rem;
+  line-height: 1.2rem;
   letter-spacing: 0.03em;
   color: #ffffff;
   opacity: 0;
@@ -1702,11 +1702,26 @@ body {
           transform: translatey(0);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 324px) {
   .projects-list__item:hover .projects-list__description {
-    padding: 1.2rem 1.2rem;
     font-size: 1.1rem;
-    line-height: 1.1rem;
+    line-height: 1.3rem;
+    padding: 1rem 1rem;
+  }
+}
+
+@media screen and (min-width: 352px) {
+  .projects-list__item:hover .projects-list__description {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    padding: 1.5rem 1.5rem;
+  }
+}
+
+@media screen and (min-width: 372px) {
+  .projects-list__item:hover .projects-list__description {
+    line-height: 1.6rem;
+    padding: 3rem 1.5rem;
   }
 }
 

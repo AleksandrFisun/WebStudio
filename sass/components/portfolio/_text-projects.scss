@@ -13,12 +13,12 @@
   height: 100%;
   transform: translatey(100%);
   transition-duration: 450ms;
-  padding: 2rem 1.5rem;
+  padding: 0.7rem 0.7rem;
   font-family: $font-roboto;
   font-style: normal;
   font-weight: 400;
   font-size: 1.1rem;
-  line-height: 1.75rem;
+  line-height: 1.2rem;
   letter-spacing: 0.03em;
   color: $color-default;
   opacity: 0;
@@ -26,10 +26,19 @@
     background-color: rgba(33, 150, 243, 0.9);
     opacity: 1;
     transform: translatey(0);
-    @media screen and (max-width: 400px) {
-      padding: 1.2rem 1.2rem;
+    @media screen and (min-width: 324px) {
       font-size: 1.1rem;
-      line-height: 1.1rem;
+      line-height: 1.3rem;
+      padding: 1rem 1rem;
+    }
+    @media screen and (min-width: 352px) {
+      font-size: 1.1rem;
+      line-height: 1.5rem;
+      padding: 1.5rem 1.5rem;
+    }
+    @media screen and (min-width: 372px) {
+      line-height: 1.6rem;
+      padding: 3rem 1.5rem;
     }
     @media screen and (min-width: 480px) {
       padding: 4rem 1.5rem;
