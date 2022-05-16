@@ -214,11 +214,6 @@ body {
   }
 }
 
-body.no-scroll {
-  height: 100%;
-  overflow: hidden;
-}
-
 .headline {
   font-weight: 700;
   font-size: 28px;
