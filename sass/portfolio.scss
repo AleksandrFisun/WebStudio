@@ -7,6 +7,8 @@
 @import "../sass/utils/headline-hidden";
 // Нормалайз
 @import "../sass/utils/normalize";
+// Падинги на секции
+@import "./utils/section";
 // Хедер
 @import "./components/header";
 // Бургер меню
@@ -27,4 +29,4 @@
 // Футер
 @import "./components/footer";
 // Контейнер
-@import "./components/container";
+@import "./utils/container";

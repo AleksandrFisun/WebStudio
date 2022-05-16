@@ -3,7 +3,8 @@
 /* Секция чем мы занимаемся */
 /* Класс для стилизации заголовков 2 уровня */
 .advantage {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
+
   @media screen and (min-width: 1200px) {
     padding-bottom: 0;
   }
@@ -13,20 +14,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 -30px -30px 0;
 }
 .advantage__item {
-  margin: 0 0 30px 0;
-  @media screen and (min-width: 768px) {
-    margin: 0 30px 30px 0;
-  }
-  @media screen and (min-width: 1200px) {
-    & {
-      margin: 0 30px 0 0;
-    }
-    &:last-child {
-      margin-right: 0;
-    }
-  }
+  margin: 0 30px 30px 0;
 }
 
 /* Иконки наши достоинства */

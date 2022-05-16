@@ -202,14 +202,34 @@ body {
   text-decoration: none;
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .headline {
   font-weight: 700;
-  font-size: 2.25rem;
-  line-height: 1.16;
-  margin-bottom: 50px;
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 30px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .headline {
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 50px;
+  }
 }
 
 /* HEADER */
@@ -262,30 +282,50 @@ body {
   color: #2196f3;
 }
 
+.header-menu__mobile-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  height: 90vh;
+}
+
 .header__menu-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  z-index: 20;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header__menu-container {
-    position: absolute;
+    position: fixed;
     display: none;
     top: 0;
     left: 0;
     width: 100%;
-    height: 796px;
+    height: 100vh;
     background: #ffffff;
-    padding: 0 40px;
+    padding: 48px 40px;
+    z-index: 30;
   }
   .header__menu-container.is-open {
     display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    z-index: 20;
   }
 }
 
@@ -407,6 +447,8 @@ body {
 
 @media screen and (min-width: 480px) {
   .connection-list__mail-menu {
+    font-size: 24px;
+    line-height: 28px;
     padding: 0 0;
   }
 }
@@ -433,7 +475,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 300px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -452,13 +493,18 @@ body {
 }
 
 .connection-list__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -469,20 +515,13 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    padding: 5px 10px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .connection-list__link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    padding: 20px 10px;
   }
 }
 
@@ -502,7 +541,7 @@ body {
   height: 12px;
 }
 
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
   .connection-list__icon-mail {
     display: block;
   }
@@ -516,7 +555,7 @@ body {
   height: 16px;
 }
 
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
   .connection-list__icon-phone {
     display: block;
   }
@@ -674,9 +713,16 @@ body {
 /* модальное окно */
 .modal {
   position: relative;
-  min-height: 581px;
-  max-width: 528px;
+  min-height: 609px;
+  max-width: 450px;
   background-color: white;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-height: 581px;
+    max-width: 528px;
+  }
 }
 
 .backdrop.is-hidden {
@@ -1040,9 +1086,16 @@ body {
 
 .bonnet-section {
   background-color: #2f303a;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .bonnet-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 /* Заголовок секции */
@@ -1101,7 +1154,7 @@ body {
 /* Секция чем мы занимаемся */
 /* Класс для стилизации заголовков 2 уровня */
 .advantage {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1119,25 +1172,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 -30px -30px 0;
 }
 
 .advantage__item {
-  margin: 0 0 30px 0;
-}
-
-@media screen and (min-width: 768px) {
-  .advantage__item {
-    margin: 0 30px 30px 0;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .advantage__item {
-    margin: 0 30px 0 0;
-  }
-  .advantage__item:last-child {
-    margin-right: 0;
-  }
+  margin: 0 30px 30px 0;
 }
 
 /* Иконки наши достоинства */
@@ -1271,11 +1310,13 @@ body {
 .section-team {
   background-color: #f5f4fa;
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
   .section-team {
     padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -1288,6 +1329,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 -30px -30px 0;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1300,20 +1342,14 @@ body {
 
 /* Коробка для заголовка и описания тимы */
 .team__item {
-  width: 270px;
+  width: 450px;
+  height: 622px;
   background-color: #ffffff;
   text-align: center;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   margin: 0 0 30px 0;
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .team__item {
-    width: 450px;
-    height: 622px;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1332,15 +1368,8 @@ body {
 }
 
 .team_image {
-  width: 270px;
-  height: 260px;
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .team_image {
-    width: 450px;
-    height: 460px;
-  }
+  width: 450px;
+  height: 460px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1457,6 +1486,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 -30px -30px 0;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1472,12 +1502,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-@media screen and (min-width: 1200px) {
-  .clients__list + .clients__list {
-    margin-left: 30px;
-  }
+  margin: 0 30px 30px 0;
 }
 
 .clients__link {
@@ -1492,7 +1517,6 @@ body {
           align-items: center;
   width: 210px;
   height: 92px;
-  margin: 0 30px 30px 0;
   border: 1px solid #afb1b8;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1514,12 +1538,6 @@ body {
   border-color: #2196f3;
 }
 
-@media screen and (min-width: 480px) {
-  .clients__link {
-    margin: 0 30px 30px 0;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .clients__link {
     width: 226px;
@@ -1531,7 +1549,6 @@ body {
   .clients__link {
     width: 170px;
     height: 92px;
-    margin: 0;
   }
 }
 
@@ -2004,8 +2021,6 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: #ffffff;
   margin: 0 0 20px 0;
@@ -2053,15 +2068,22 @@ body {
 
 /* Контейнер */
 .container {
-  max-width: 1200px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */

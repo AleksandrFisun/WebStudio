@@ -3,14 +3,17 @@
 .section-team {
   background-color: #f5f4fa;
   padding-top: 60px;
+  padding-bottom: 60px;
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 .team {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 -30px -30px 0;
   @media screen and (min-width: 1200px) {
     justify-content: space-between;
   }
@@ -18,17 +21,14 @@
 
 /* Коробка для заголовка и описания тимы */
 .team__item {
-  width: 270px;
+  width: 450px;
+  height: 622px;
   background-color: $color-default;
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   margin: 0 0 30px 0;
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    width: 450px;
-    height: 622px;
-  }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 354px;
     height: 536px;
@@ -40,12 +40,8 @@
   }
 }
 .team_image {
-  width: 270px;
-  height: 260px;
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    width: 450px;
-    height: 460px;
-  }
+  width: 450px;
+  height: 460px;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 354px;
     height: 374px;

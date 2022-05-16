@@ -1,12 +1,17 @@
 // заголовки
 .headline {
   font-weight: 700;
-  font-size: 2.25rem;
-  line-height: 1.16;
-  margin-bottom: 50px;
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 30px;
   text-align: center;
   letter-spacing: 0.03em;
   color: $color-text;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 50px;
+  }
 }
 /* HEADER */
 /* Logotype */
@@ -44,23 +49,33 @@
 .header-logo__blue {
   color: $color-additional;
 }
+.header-menu__mobile-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 90vh;
+}
 .header__menu-container {
   display: flex;
-  align-items: center;
-  width: 100%;
-  z-index: 20;
-  @media screen and (max-width: 768px) {
-    position: absolute;
+  @media screen and (max-width: 767px) {
+    position: fixed;
     display: none;
     top: 0;
     left: 0;
     width: 100%;
-    height: 796px;
+    height: 100vh;
     background: #ffffff;
-    padding: 0 40px;
+    padding: 48px 40px;
+    z-index: 30;
     &.is-open {
       display: block;
     }
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 20;
   }
 }
 /* Стилизация навигации хедер */
@@ -158,6 +173,8 @@
   letter-spacing: 0.02em;
   color: $color-text-secondary;
   @media screen and (min-width: 480px) {
+    font-size: 24px;
+    line-height: 28px;
     padding: 0 0;
   }
 }
@@ -177,7 +194,6 @@
 .connection-list {
   @media screen and (max-width: 767px) {
     display: flex;
-    height: 300px;
     flex-direction: column-reverse;
     align-content: space-around;
   }
@@ -187,12 +203,12 @@
 }
 
 .connection-list__link {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   transition-property: color;
   transition-duration: 250ms;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
+  padding: 20px 10px;
   @media screen and (min-width: 768px) {
     text-decoration: none;
     color: $color-text-secondary;
@@ -200,11 +216,10 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    padding: 5px 10px;
   }
   @media screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 20px 10px;
   }
 }
 .connection-list__link:hover,
@@ -220,7 +235,7 @@
   margin-right: 10px;
   width: 16px;
   height: 12px;
-  @media screen and (min-width: 768) {
+  @media screen and (min-width: 768px) {
     display: block;
   }
 }
@@ -231,7 +246,7 @@
   margin-right: 10px;
   width: 10px;
   height: 16px;
-  @media screen and (min-width: 768) {
+  @media screen and (min-width: 768px) {
     display: block;
   }
 }
