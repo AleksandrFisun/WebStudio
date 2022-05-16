@@ -67,6 +67,7 @@
     background: #ffffff;
     padding: 48px 40px;
     z-index: 30;
+    overflow-y: scroll;
     &.is-open {
       display: block;
     }
