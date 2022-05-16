@@ -214,6 +214,11 @@ body {
   }
 }
 
+body.no-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
 .headline {
   font-weight: 700;
   font-size: 28px;
@@ -291,6 +296,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow-y: hidden;
   width: 100%;
 }
 
@@ -327,7 +333,6 @@ body {
     background: #ffffff;
     padding: 48px 40px;
     z-index: 30;
-    overflow-y: scroll;
   }
   .header__menu-container.is-open {
     display: block;
@@ -716,6 +721,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: scroll;
   z-index: 50;
   position: fixed;
   top: 0;
@@ -1382,7 +1388,8 @@ body {
 @media screen and (min-width: 1200px) {
   .team__item {
     width: 270px;
-    margin: 0;
+    height: 428px;
+    margin: 0 0 0 0;
   }
 }
 

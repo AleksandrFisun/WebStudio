@@ -1,3 +1,7 @@
+body.no-scroll {
+  height: 100%;
+  overflow: hidden;
+}
 // заголовки
 .headline {
   font-weight: 700;
@@ -53,6 +57,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  overflow-y: hidden;
 
   width: 100%;
   @media screen and (max-width: 767px) {
@@ -75,7 +80,7 @@
     background: #ffffff;
     padding: 48px 40px;
     z-index: 30;
-    overflow-y: scroll;
+
     &.is-open {
       display: block;
     }
