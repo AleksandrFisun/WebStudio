@@ -54,6 +54,9 @@
 /* Ссылка на проект */
 .projects-list__link {
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 /* Заголовок и описание */
@@ -62,6 +65,8 @@
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   padding: 1.25rem 1.5rem;
+
+  flex-grow: 1;
 }
 
 /* Заголовок проекта */
@@ -71,9 +76,6 @@
   line-height: 36px;
   letter-spacing: 0.06em;
   color: $color-text;
-  @media screen and (min-width: 768px) {
-    height: 72px;
-  }
   @media screen and (min-width: 1200px) {
     max-height: 36px;
     font-size: 1.1rem;
@@ -86,7 +88,7 @@
   font-family: $font-roboto;
   color: $color-text-secondary;
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.87;
+  font-size: 16px;
+  line-height: 30px;
   letter-spacing: 0.03em;
 }

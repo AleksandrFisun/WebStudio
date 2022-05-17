@@ -146,7 +146,7 @@
 /* Ссылка права пользователя */
 .modal__fields-rights {
   position: relative;
-  margin: 1.25rem 2.5rem 0 4.75rem;
+  margin: 1.25rem 0;
 }
 
 .modal__rights {
@@ -156,10 +156,9 @@
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
-  @media screen and (min-width: 768px) {
-    font-size: 0.875rem;
-    line-height: 1.5rem;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 
@@ -171,9 +170,9 @@
   line-height: 14px;
   letter-spacing: 0.03em;
   color: $color-additional;
-  @media screen and (min-width: 768px) {
-    font-size: 0.875rem;
-    line-height: 0.9rem;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 
@@ -252,19 +251,23 @@
   content: "";
   position: absolute;
   top: 0.2rem;
-  left: -1rem;
+  left: 2rem;
   display: block;
   width: 1rem;
   height: 1rem;
   border: solid 2px $color-text;
   border-radius: 2px;
+  @media screen and (min-width: 1200px) {
+    top: 0.2rem;
+    left: 2.3rem;
+  }
 }
 
 .modal__checkbox::after {
   content: "";
   position: absolute;
   top: 0.2rem;
-  left: -1rem;
+  left: 2rem;
   display: block;
   width: 1rem;
   height: 1rem;
@@ -276,6 +279,10 @@
   opacity: 0;
   transition-property: opacity;
   transition-duration: 250ms;
+  @media screen and (min-width: 1200px) {
+    top: 0.2rem;
+    left: 2.3rem;
+  }
 }
 
 .modal__rights-checkbox:checked + .modal__checkbox::after {
